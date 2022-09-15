@@ -1,0 +1,22 @@
+datetime,Barometer_Zoll,Barometer_Linien,Thermometer,Witterung,manual_corr
+1843-01-13 07:00:00,26,5,-2,trueb,unknown
+1843-01-13 13:00:00,26,5,4,trueb,unknown
+1843-01-13 21:00:00,26,6,0,heiter,unknown
+1843-01-14 07:00:00,26,5,-2,Schnee,unknown
+1843-01-14 13:00:00,26,6,6,detto,unknown
+1843-01-14 21:00:00,26,5,-2,trueb,unknown
+1843-01-15 07:00:00,26,5,-3,detto,unknown
+1843-01-15 13:00:00,26,4,4,detto,unknown
+1843-01-15 21:00:00,26,4,1,Schnee,unknown
+1843-01-16 07:00:00,26,3,2,Regen,unknown
+1843-01-16 13:00:00,26,3,5,Regen,unknown
+1843-01-16 21:00:00,26,8,0,trueb,unknown
+1843-01-17 07:00:00,27,-,-2,trueb,unknown
+1843-01-17 13:00:00,27,-,4,heiter,unknown
+1843-01-17 21:00:00,27,3,0,heiter,unknown
+1843-01-18 07:00:00,27,3,0,detto,unknown
+1843-01-18 13:00:00,27,5,4,trueb,unknown
+1843-01-18 21:00:00,27,5,1,detto,unknown
+1843-01-19 07:00:00,27,4,1,detto,unknown
+1843-01-19 13:00:00,27,3,6,heiter,unknown
+1843-01-19 21:00:00,27,3,-0,trueb,unknown
