@@ -675,37 +675,39 @@ def process_witt_feld(img):
 
 # ---
 
-# ## Loading of of trained RF algorithms
+# ## Loading of trained random forest (RF) algorithms
+
+# The trained random forest algorithms need to be decompressed [(unzipped)](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc) from the folder **trained_RF_algorithms_zipped.zip** before use.
 
 # For numeric data field segmentation
-
-# In[16]:
-
-
-segm_classifier = load("trained_RF_algorithms/1_RFC_algorithm.joblib")
-
-
-# For optical character recognition (OCR) of segmented characters.
 
 # In[17]:
 
 
-ocr_classifier = load("trained_RF_algorithms/2_RFC_algorithm.joblib")
+segm_classifier = load("1_RFC_algorithm.joblib")
 
 
-# For optical pattern recognition of descripive data fields.
+# For optical character recognition (OCR) of segmented characters.
 
 # In[18]:
 
 
-witt_classifier = load("trained_RF_algorithms/3_RFC_algorithm.joblib")
+ocr_classifier = load("2_RFC_algorithm.joblib")
+
+
+# For optical pattern recognition of descripive data fields.
+
+# In[20]:
+
+
+witt_classifier = load("3_RFC_algorithm.joblib")
 
 
 # ---
 
 # ## Extraction of data from data fields
 
-# In[19]:
+# In[21]:
 
 
 def iteration (boxes):
@@ -920,7 +922,7 @@ def iteration (boxes):
 
 # ## Structure of the data list for the output
 
-# In[20]:
+# In[22]:
 
 
 def days_file_structure (days_file, filename, daten):
@@ -1004,7 +1006,7 @@ def days_file_structure (days_file, filename, daten):
 
 # ---
 
-# ## Data extraction for some example tables
+# ## Data extraction for one example table
 
 # In[23]:
 
@@ -1065,6 +1067,6 @@ df.to_csv("result_example_raw_data.csv", index=False)
 
 # ---
 
-# The data source for the data extraction is the Bozner Wochenblatt (later Bozner Zeitung) for the period 1842 - 1848 (https://digital.tessmann.it/tessmannDigital/Zeitungsarchiv/Jahresuebersicht/Zeitung/2) (last access 15.09.2022, License: CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/)
+# The data source for the data extraction is the [Bozner Wochenblatt](https://digital.tessmann.it/tessmannDigital/Zeitungsarchiv/Jahresuebersicht/Zeitung/2) (later Bozner Zeitung) for the period 1842 - 1848 (last access 15.09.2022. License: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 # ---
